@@ -1,10 +1,23 @@
 import React from 'react'
 
-export function Square(props) {
+export function Square({value, onClick}) {
     
 
     return (
-        
-        <h1>This is the Square</h1>
-    )
+
+            <button onClick={onClick} className="square">
+                {value}
+            </button>
+
+    );
 }
+
+
+/* 
+- Square
+    - Props
+        - value => X, O, null
+        - onClick
+    - render
+        - box => X, O, empty 
+*/
